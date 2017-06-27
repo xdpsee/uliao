@@ -1,12 +1,12 @@
-package com.cherry.youliao.data.service;
+package com.cherry.youliao.service;
 
-import com.cherry.youliao.controller.manager.RegistryManager;
-import com.cherry.youliao.controller.ro.UserRegistry;
+import com.cherry.youliao.service.manager.RegistryManager;
+import com.cherry.youliao.api.ro.UserRegistry;
 import com.cherry.youliao.data.cache.JwtTokenCache;
 import com.cherry.youliao.data.enums.IdentityType;
 import com.cherry.youliao.data.po.Authority;
 import com.cherry.youliao.data.repository.Repository;
-import com.cherry.youliao.data.service.exception.*;
+import com.cherry.youliao.service.exception.*;
 import com.cherry.youliao.security.UserAuthenticationToken;
 import com.cherry.youliao.security.jwt.JwtTokenUtils;
 import com.cherry.youliao.utils.ObjectValidator;

@@ -1,15 +1,15 @@
-package com.cherry.youliao.controller;
+package com.cherry.youliao.api;
 
-import com.cherry.youliao.controller.misc.EmailVerifyToken;
-import com.cherry.youliao.controller.ro.UserRegistry;
-import com.cherry.youliao.controller.vo.ResponseData;
+import com.cherry.youliao.api.misc.EmailVerifyToken;
+import com.cherry.youliao.api.ro.UserRegistry;
+import com.cherry.youliao.api.vo.ResponseData;
 import com.cherry.youliao.data.enums.IdentityType;
 import com.cherry.youliao.data.po.User;
 import com.cherry.youliao.data.po.UserAuth;
 import com.cherry.youliao.data.repository.Repository;
-import com.cherry.youliao.data.service.AuthService;
-import com.cherry.youliao.data.service.EmailService;
-import com.cherry.youliao.data.service.exception.*;
+import com.cherry.youliao.service.AuthService;
+import com.cherry.youliao.service.EmailService;
+import com.cherry.youliao.service.exception.*;
 import com.cherry.youliao.utils.CryptoUtils;
 import com.cherry.youliao.utils.JSONUtils;
 import com.fasterxml.jackson.core.type.TypeReference;

@@ -1,4 +1,4 @@
-package com.cherry.youliao.controller.vo;
+package com.cherry.youliao.api.vo;
 
 import lombok.Data;
 

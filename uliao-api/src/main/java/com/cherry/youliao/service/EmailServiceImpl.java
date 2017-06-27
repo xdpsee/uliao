@@ -1,4 +1,4 @@
-package com.cherry.youliao.data.service;
+package com.cherry.youliao.service;
 
 import com.cherry.youliao.data.po.UserAuth;
 import org.apache.commons.mail.DefaultAuthenticator;

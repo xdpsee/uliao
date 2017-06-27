@@ -1,10 +1,9 @@
-package com.cherry.youliao.controller;
+package com.cherry.youliao.api;
 
-import com.cherry.youliao.controller.vo.ResponseData;
-import com.cherry.youliao.data.enums.IdentityType;
-import com.cherry.youliao.data.service.AuthService;
-import com.cherry.youliao.data.service.exception.EmailWasNotVerifiedException;
-import com.cherry.youliao.data.service.exception.InvalidParamsException;
+import com.cherry.youliao.api.vo.ResponseData;
+import com.cherry.youliao.service.AuthService;
+import com.cherry.youliao.service.exception.EmailWasNotVerifiedException;
+import com.cherry.youliao.service.exception.InvalidParamsException;
 import com.cherry.youliao.security.jwt.JwtAuthenticationRequest;
 import com.cherry.youliao.security.jwt.JwtAuthenticationResponse;
 import com.cherry.youliao.utils.ObjectValidator;
@@ -15,7 +14,6 @@ import org.springframework.security.core.AuthenticationException;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.regex.Pattern;
 
 @RestController
 public class AuthController {

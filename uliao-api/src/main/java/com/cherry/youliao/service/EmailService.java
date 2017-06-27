@@ -1,6 +1,5 @@
-package com.cherry.youliao.data.service;
+package com.cherry.youliao.service;
 
-import com.cherry.youliao.data.po.User;
 import com.cherry.youliao.data.po.UserAuth;
 
 public interface EmailService {

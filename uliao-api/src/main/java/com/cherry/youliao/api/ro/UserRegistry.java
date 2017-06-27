@@ -1,11 +1,9 @@
-package com.cherry.youliao.controller.ro;
+package com.cherry.youliao.api.ro;
 
 import lombok.Data;
-import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.Length;
 
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 
 @Data
 public class UserRegistry {

@@ -1,6 +1,6 @@
 package com.cherry.youliao.utils;
 
-import com.cherry.youliao.data.service.exception.InvalidParamsException;
+import com.cherry.youliao.service.exception.InvalidParamsException;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.stereotype.Component;
 

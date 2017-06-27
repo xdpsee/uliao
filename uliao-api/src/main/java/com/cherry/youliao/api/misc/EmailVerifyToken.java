@@ -1,4 +1,4 @@
-package com.cherry.youliao.controller.misc;
+package com.cherry.youliao.api.misc;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

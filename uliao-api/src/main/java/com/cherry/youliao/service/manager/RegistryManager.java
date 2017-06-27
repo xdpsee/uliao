@@ -1,4 +1,4 @@
-package com.cherry.youliao.controller.manager;
+package com.cherry.youliao.service.manager;
 
 import com.cherry.youliao.data.enums.IdentityType;
 import com.cherry.youliao.data.po.Authority;
@@ -6,12 +6,11 @@ import com.cherry.youliao.data.po.InviteCode;
 import com.cherry.youliao.data.po.User;
 import com.cherry.youliao.data.po.UserAuth;
 import com.cherry.youliao.data.repository.Repository;
-import com.cherry.youliao.data.service.exception.EmailExistsException;
-import com.cherry.youliao.data.service.exception.InviteCodeNotFoundException;
-import com.cherry.youliao.data.service.exception.InviteCodeWasUsedException;
-import com.cherry.youliao.data.service.exception.UserNameExistsException;
+import com.cherry.youliao.service.exception.EmailExistsException;
+import com.cherry.youliao.service.exception.InviteCodeNotFoundException;
+import com.cherry.youliao.service.exception.InviteCodeWasUsedException;
+import com.cherry.youliao.service.exception.UserNameExistsException;
 import com.cherry.youliao.utils.ExceptionUtils;
-import com.cherry.youliao.utils.ObjectValidator;
 import org.nutz.dao.Cnd;
 import org.nutz.dao.FieldFilter;
 import org.springframework.beans.factory.annotation.Autowired;

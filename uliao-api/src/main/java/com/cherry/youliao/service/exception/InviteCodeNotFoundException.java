@@ -1,4 +1,4 @@
-package com.cherry.youliao.data.service.exception;
+package com.cherry.youliao.service.exception;
 
 public class InviteCodeNotFoundException extends Exception {
     public InviteCodeNotFoundException() {
