@@ -1,6 +1,5 @@
 package com.cherry.youliao.security.jwt;
 
-import com.cherry.youliao.security.UserDetailsFactory;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -66,7 +65,7 @@ public class JwtTokenUtils {
         Map<String, Object> claims = new HashMap<>();
         claims.put(CLAIM_KEY_PRINCIPAL, username);
         claims.put(CLAIM_KEY_CREATED, new Date());
-        claims.put(CLAIM_KEY_AUTHORITIES, UserDetailsFactory.joinAuthority(authorities));
+        claims.put(CLAIM_KEY_AUTHORITIES, joinAuthority(authorities));
 
         return generateToken(claims);
     }
@@ -110,6 +109,13 @@ public class JwtTokenUtils {
         return new Date(System.currentTimeMillis() + expiration * 1000);
     }
 
+    private String joinAuthority(Collection<? extends GrantedAuthority> authorities) {
+        String[] roles = authorities.stream()
+                .map(GrantedAuthority::getAuthority).collect(toList())
+                .toArray(new String[0]);
+
+        return StringUtils.join(roles, ",");
+    }
 }
 
 
