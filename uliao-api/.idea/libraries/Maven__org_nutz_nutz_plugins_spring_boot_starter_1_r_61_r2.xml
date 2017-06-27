@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.nutz:nutz-plugins-spring-boot-starter:1.r.61.r2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/nutz/nutz-plugins-spring-boot-starter/1.r.61.r2/nutz-plugins-spring-boot-starter-1.r.61.r2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/nutz/nutz-plugins-spring-boot-starter/1.r.61.r2/nutz-plugins-spring-boot-starter-1.r.61.r2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/nutz/nutz-plugins-spring-boot-starter/1.r.61.r2/nutz-plugins-spring-boot-starter-1.r.61.r2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
